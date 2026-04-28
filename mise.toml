@@ -1,0 +1,10 @@
+[tools]
+"cargo:tauri-cli" = "2"
+
+[tasks.build]
+description = "Build Tauri app for the current platform"
+run = "cargo tauri build"
+
+[tasks.dev]
+description = "Run Tauri app in dev mode (host platform only)"
+run = "cargo tauri dev"
