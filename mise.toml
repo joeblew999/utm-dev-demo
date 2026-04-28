@@ -1,4 +1,5 @@
 [tools]
+rust              = "stable"
 "cargo:tauri-cli" = "2"
 
 [tasks.build]
