@@ -22,4 +22,11 @@ tauri = { version = "2", features = [] }
 tauri-plugin-opener = "2"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
+# Optional — used by `utm-dev screenshot` (host-side WebDriver capture).
+# Enabled via `cargo build --features webdriver`. Without the feature, the
+# plugin is excluded entirely so release builds aren't impacted.
+tauri-plugin-webdriver = { version = "0.2", optional = true }
+
+[features]
+webdriver = ["dep:tauri-plugin-webdriver"]
 
