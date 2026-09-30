@@ -3,7 +3,7 @@
 idiomatic_version_file_enable_tools = ["rust"]
 
 [tools]
-"cargo:tauri-cli" = "2"
+"cargo:tauri-cli" = "2.12.0"
 
 [tasks.build]
 description = "Build Tauri app for the current platform"
